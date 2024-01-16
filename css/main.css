@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body.active header {
+  background-color: #282F37;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+header {
+  padding-bottom: 50px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #CDA274;
+  padding: 20px 50px;
+}
+
+.nav .left {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.sun {
+  display: none;
+  cursor: pointer;
+  background-color: #CDA274;
+  border-radius: 50%;
+}
+.moon {
+  cursor: pointer;
+}
+
+.head {
+  background-image: url("../images/jpg/background-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  text-align: center;
+}
+
+.head h1 {
+  color: white;
+  padding: 40px 0;
+}
+
+body.active main {
+  background-color: #282F37;
+}
+
+.form {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.form label {
+  padding: 10px 2px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border-bottom: 1px solid #CDA274;
+}
+
+.form label img {
+  width: 20px;
+}
+
+.searchUser {
+  border: none;
+  outline: none;
+}
+
+.searchUser::placeholder {
+  color: #CDA274;
+}
+
+body.active .searchUser {
+  background-color: #282F37;
+  color: #fff;
+}
+body.active .searchUser::placeholder {
+   color: #fff;
+}
+
+.refresh_btn,
+.clear_btn {
+  padding: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  background-color: #CDA274;
+  border-radius: 5px;
+}
+
+.cards {
+  padding: 0 50px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 250px;
+  font-family: 'Jost', sans-serif;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 7px 18px 1px rgba(34, 60, 80, 0.2);
+  margin-bottom: 40px;
+  border-radius: 8px;
+  position: relative;
+}
+
+body.active .card {
+  background-color: #282F37;
+  color: #CDA274;
+  box-shadow:  19px 19px 37px #22272e,
+             -19px -19px 37px #2e3740;
+}
+
+.trash {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  display: none;
+}
+
+.card:hover .trash {
+  display: block;
+}
+
+.card img {
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.name,
+.old,
+.address {
+  margin-bottom: 10px;
+}
+
+.hidden {
+  display: none;
+}
